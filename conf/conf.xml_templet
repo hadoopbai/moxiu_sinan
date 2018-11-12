@@ -1,0 +1,54 @@
+<configuration>
+	<Base>
+		<IpFile>/project/columbus/compass/base/data/ip_total/18/01/31/iplib</IpFile>
+		<productList>
+			<member>
+				<describe>------------桌面配置---------------------</describe>
+				<typeId>1</typeId>
+				<productName>launcher</productName>
+				<productId>549c6462ba4d9b4d098b4567</productId>
+				<xmlName>Launcher.xml</xmlName>
+			</member>
+			<member>
+				<describe>------锁屏配置--2:对vcode进行了100以上的过滤-----</describe>
+				<typeId>2</typeId>
+				<productName>vlock</productName>
+				<productId>vlocker</productId>
+				<xmlName>vlock.xml</xmlName>
+			</member>
+			<member>
+				<describe>------------刻间配置---------------------</describe>
+				<typeId>1</typeId>
+				<productName>ktime</productName>
+				<productId>ktime</productId><describe>清洗后的存储路径</describe>
+				<xmlName>ktime.xml</xmlName>
+			</member>
+			<member>
+			    <describe>------------追漫配置---------------------</describe>
+			    <typeId>1</typeId>
+				<productName>cartoon</productName>
+				<productId>cartoon</productId><describe>清洗后的存储路径</describe>
+				<xmlName>cartoon.xml</xmlName>
+			</member>
+		</productList>
+	</Base>
+	
+<product>
+		<LiuCun>
+			<Input>/cleandata/apps/{productId}/base/*/{date}/*/*</Input>
+			<describe>字段个数大于等于此值</describe>
+			<MinFieldSize>20</MinFieldSize>
+			<Output>/user/jp-spark/liucun_process/{productName}/data/dayLiucun/{date}</Output>
+		</LiuCun>
+		<LiuCunMerge>
+			<Input>/user/jp-spark/liucun_process/{productName}/data/dayLiucun/{date}/*,/user/jp-spark/liucun_process/{productName}/data/liucun/{date_2}/*</Input>
+			<Output>/user/jp-spark/liucun_process/{productName}/data/liucun/{date}</Output>
+		</LiuCunMerge>
+		<DayExtract>
+			<Input>/cleandata/apps/{productId}/base/*/{date}/*/*</Input>
+			<describe>字段个数大于等于此值</describe>
+			<FieldSize>20</FieldSize>
+			<Output>/user/jp-spark/liucun_process/{productName}/data/dayExtract/{date}</Output>
+		</DayExtract>
+</product>
+</configuration>

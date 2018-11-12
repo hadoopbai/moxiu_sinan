@@ -1,0 +1,5 @@
+任务名称,MM_PATH,多边形区域,多边形ID,城市ID,城市名称,多边形区域GPS_PATH,订单GPS_PATH
+changpingzhengfujie,/user/bigdata-dp/map_match_result/v3,116.2125@40.2338;116.2813@40.2332;116.2829@40.1973;116.2141@40.1982,3,1,BeiJing,/user/its_bi/data/polygon_all,/user/its_bi/ordergps
+jinanTask,/user/bigdata-dp/map_match_result/v3,117.0221@36.6625;117.0598@36.6632;117.0582@36.6458;117.0217@36.6464,4,12,JiNan,/user/its_bi/data/polygon_all,/user/its_bi/ordergps
+wuhanTask,/user/bigdata-dp/map_match_result/v3,114.2515@30.6282;114.2635@30.6310;114.2870@30.5819;114.2757@30.5767,5,6,WuHan,/user/its_bi/data/polygon_all,/user/its_bi/ordergps
+qingdaoTask,/user/bigdata-dp/map_match_result/v3,120.3737@36.0758;120.4047@36.0743;120.4018@36.0602;120.3753@36.0603,0,13,QingDao,/user/its_bi/data/polygon_all,/user/its_bi/ordergps

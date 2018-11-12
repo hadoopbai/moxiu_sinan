@@ -1,0 +1,47 @@
+<configuration>
+
+	<Base>
+		<IpFile>/project/columbus/compass/base/data/ip_total/18/01/31/iplib
+		</IpFile>
+	</Base>
+	<Launcher>
+		<LiuCun>
+			<Input>/cleandata/apps/549c6462ba4d9b4d098b4567/base/*/2015/*/*/*
+			</Input>
+			<MinFieldSize>24</MinFieldSize>
+			<Output>/user/jp-spark/liucun_process/launcher/data/2015 </Output>
+		</LiuCun>
+		<LiuCunMerge>
+			<Input>/cleandata/apps/549c6462ba4d9b4d098b4567/base/*/2015/*/*/*
+			</Input>
+			<Output>/user/jp-spark/liucun_process/launcher/data/2015 </Output>
+		</LiuCunMerge>
+		<DayExtract>
+			<Input>/cleandata/apps/549c6462ba4d9b4d098b4567/base/*/2015/*/*/*
+			</Input>
+			<FieldSize>27</FieldSize>
+			<Output>/user/jp-spark/liucun_process/launcher/data/2015 </Output>
+		</DayExtract>
+	</Launcher>
+
+	<Vlock>
+		<LiuCun>
+			<Input>/cleandata/apps/549c6462ba4d9b4d098b4567/base/*/2015/*/*/*
+			</Input>
+			<MinFieldSize>24</MinFieldSize>
+			<Output>/user/jp-spark/liucun_process/vlock/data/2015 </Output>
+		</LiuCun>
+		<LiuCunMerge>
+			<Input>/cleandata/apps/549c6462ba4d9b4d098b4567/base/*/2015/*/*/*
+			</Input>
+			<Output>/user/jp-spark/liucun_process/launcher/data/2015 </Output>
+		</LiuCunMerge>
+		<DayExtract>
+			<Input>/cleandata/apps/549c6462ba4d9b4d098b4567/base/*/2015/*/*/*
+			</Input>
+			<FieldSize>27</FieldSize>
+			<Output>/user/jp-spark/liucun_process/launcher/data/2015 </Output>
+		</DayExtract>
+	</Vlock>
+
+</configuration>
